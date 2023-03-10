@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <style>
+  #anim {
+   animation: animation_name 2s infinite;
+  }
+  
+  @-webkit-keyframes animation_name {
+   from {
+    border: 1px solid green;
+   }
+   to {
+    border: 10px dotted red;
+   }
+  }
+  
+  @keyframes animation_name {
+   from {
+    border: 1px solid green;
+   }
+   to {
+    border: 10px dotted red;
+   }
+  }
+ </style>
+
+</head>
+
+<body>
+ <div id="anim">
+  Border Animation
+ </div>
+
+</body>
+
+</html>

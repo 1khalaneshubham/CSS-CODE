@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <style>
+  .clsbox {
+   width: 100px;
+   height: 100px;
+   background: red;
+  }
+ </style>
+</head>
+
+<body>
+ <div class="clsbox"></div>
+
+ Rotate X
+ <input min="0" value="0" max="180" step="10" oninput="call_fun1(this.value);" type="range" />
+
+ Rotate Y
+ <input min="0" value="0" max="180" step="10" oninput="call_fun2(this.value);" type="range" />
+
+ Rotate Z
+ <input min="0" value="0" max="180" step="10" oninput="call_fun3(this.value);" type="range" />
+
+ <script>
+  function call_fun1(val)
+  {
+   document.getElementsByClassName("clsbox")[0].style.transform = "rotateX(" + val + "deg)";
+  }
+
+  function call_fun2(val)
+  {
+   document.getElementsByClassName("clsbox")[0].style.transform = "rotateY(" + val + "deg)";
+  }
+
+  function call_fun3(val)
+  {
+   document.getElementsByClassName("clsbox")[0].style.transform = "rotateZ(" + val + "deg)";
+  }
+ </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <style>
+  #anbody {
+   background-image: url("star.png");
+   animation: animation_name 1s infinite;
+   background-repeat: no-repeat;
+   background-position: center;
+  }
+  
+  @-webkit-keyframes animation_name {
+   from {
+    background-size: 0% 0%;
+   }
+   to {
+    background-size: 100% 100%;
+   }
+  }
+  
+  @keyframes animation_name {
+   from {
+    background-size: 0px 0px;
+   }
+   to {
+    background-size: 100% 100%;
+   }
+  }
+ </style>
+
+</head>
+
+<body id="anbody">
+ Some text
+</body>
+
+</html>

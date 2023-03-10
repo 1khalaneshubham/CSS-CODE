@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <style>
+  table {
+   counter-reset: rowNumber;
+  }
+  
+  table tr:not(:first-child) {
+   counter-increment: rowNumber;
+  }
+  
+  table tr td:first-child::before {
+   content: counter(rowNumber);
+  }
+ </style>
+
+</head>
+
+<body>
+ <table class="row-number ">
+  <tr>
+   <th>S.No</th>
+   <th>Name</th>
+   <th>Mark</th>
+   <th>Place</th>
+   <th>Country</th>
+  </tr>
+  <tr>
+   <td></td>
+   <td>Merbin</td>
+   <td>485</td>
+   <td>Mulagumoodu</td>
+   <td>India</td>
+  </tr>
+  <tr>
+   <td></td>
+   <td>Franklin</td>
+   <td>435</td>
+   <td>Nagercoil</td>
+   <td>India</td>
+  </tr>
+  <tr>
+   <td></td>
+   <td>Rajesh</td>
+   <td>387</td>
+   <td>Marthandam</td>
+   <td>USA</td>
+  </tr>
+  <tr>
+   <td></td>
+   <td>Nagaraj</td>
+   <td>456</td>
+   <td>ponnaru</td>
+   <td>India</td>
+  </tr>
+  <tr>
+   <td></td>
+   <td>Jino Morargis</td>
+   <td>499</td>
+   <td>kozicode</td>
+   <td>Pakistan</td>
+  </tr>
+  <tr>
+   <td></td>
+   <td>Reegn</td>
+   <td>259</td>
+   <td>Arunankal</td>
+   <td>India</td>
+  </tr>
+  <tr>
+   <td></td>
+   <td>Joseph</td>
+   <td>398</td>
+   <td>kanakodu</td>
+   <td>India</td>
+  </tr>
+ </table>
+</body>
+
+</html>

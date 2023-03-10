@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <style>
+  input:read-only {
+   background: brown;
+  }
+  
+  input:read-write {
+   background: blue;
+  }
+  /For Firefox/
+  
+  input:-moz-read-only {
+   background: brown;
+  }
+  
+  input:-moz-read-write {
+   background: blue;
+  }
+ </style>
+
+</head>
+
+<body>
+
+ <input type="text" value="Read only text box" readonly>
+ <input type="text" value="Read write text box">
+
+</body>
+
+</html>
